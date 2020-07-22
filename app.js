@@ -19,6 +19,3 @@ app.use(cors());
 app.use('/api/members', memberRouter)
 
 module.exports = app;
-
-
-
