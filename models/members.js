@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const memberSchema = new mongoose.Schema({
+const MemberSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -11,3 +11,5 @@ const memberSchema = new mongoose.Schema({
     }
   }
 })
+
+mongoose.model('Member', MemberSchema)
