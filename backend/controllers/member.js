@@ -14,9 +14,6 @@ exports.getMembers = async (req, res) => {
 }
 
 exports.addMember = async (req, res) => {
-
-
-
     try {
       const member = new Member({
         ...req.body
