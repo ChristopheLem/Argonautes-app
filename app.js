@@ -18,4 +18,8 @@ app.use(cors());
 // uri & router used
 app.use('/api/members', memberRouter)
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("frontend/build"));
+}
+
 module.exports = app;
