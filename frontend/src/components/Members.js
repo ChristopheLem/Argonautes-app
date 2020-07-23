@@ -28,7 +28,9 @@ export default function Members() {
             
             />)})
           :
-          (<h2>Vite !!! Il faut choisir ton équipage !!!</h2>)
+          (
+            <h2>Vite !!! Il faut choisir ton équipage !!!</h2>
+          )
           
         }
       </section>
