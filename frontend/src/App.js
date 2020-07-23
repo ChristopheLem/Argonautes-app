@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, AddMember } from './components'
+import { Header, Footer, AddMember, Members } from './components'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Header />
       <main>
         <AddMember />
-
+        <Members />
       </main>
       <Footer />
     </>
