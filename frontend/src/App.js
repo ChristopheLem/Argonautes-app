@@ -1,13 +1,16 @@
 import React from 'react';
-import { Header, Footer } from './components'
+import { Header, Footer, AddMember } from './components'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
+      <main>
+        <AddMember />
 
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

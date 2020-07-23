@@ -24,10 +24,6 @@ header h1 {
   font-size: 2.5em;
 }
 
-footer {
-  background: #fff;
-}
-
 h1, h2 {
   text-align: center;
 }
@@ -42,6 +38,11 @@ label {
   text-align: center;
 }
 
+.confirmation {
+  color: green;
+  animation: fadeIn ease 3s;
+}
+
 .member-item {
   padding: 0.25em 0;
 }
@@ -52,4 +53,10 @@ footer {
   color: #fff;
   background: #f76c6c;
   padding: 0.25em 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
