@@ -16,24 +16,34 @@ export default function Members() {
 
   return (
     <>
-      <h2>Membres de l'équipage</h2>
-      <section className="member-list">
-        {
-          (members && members.length) ? 
-          members.map(member => {
-            return (
-            <Member key={member._id}
-                    id={member._id}
-                    gaillard={member.name}
-            
-            />)})
-          :
-          (
-            <h2>Vite !!! Il faut choisir ton équipage !!!</h2>
-          )
-          
-        }
-      </section>
+    {
+      (members && members.length) 
+      ? 
+      (
+        <>    
+          <h2>Membres de l'équipage</h2>
+          <section className="member-list">
+
+          {
+            members.map(member => {
+              return (
+                <Member 
+                  key={member._id}
+                  id={member._id}
+                  gaillard={member.name}
+            />
+              )
+            })
+          }
+          </section>
+        </>
+      )
+      :
+        (
+          <h2 className="alert">Vite !!! Il faut choisir ton équipage !!!</h2>
+        )
+      }
+      
     </>
   );
 }

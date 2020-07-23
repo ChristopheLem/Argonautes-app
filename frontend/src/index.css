@@ -55,6 +55,10 @@ label {
   text-align: center;
 }
 
+.alert {
+  color: red;
+}
+
 footer {
   margin-top: 2em;
   text-align: center;
