@@ -45,4 +45,8 @@ server.on("listening", () => {
   console.log("Listening on " + bind);
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'))
+}
+
 server.listen(port);
