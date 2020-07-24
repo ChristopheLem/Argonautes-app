@@ -3,16 +3,16 @@
 ## How to use this App ? 
 
 ### 1- clone this project 
-### 2- cd backend 
-### 3- npm install
-### 4- npm run dev
+### 2- npm install
+### 3- npm run dev
 
-The server should run on localhost port 4000
+The server should run on localhost port 5000
 
-### 5- cd ../frontend
+### 4- cd frontend
 ### 6- npm install
 ### 7- npm run start
 
 The server should run on localhost port 3000
 
 #### You can use this application right away.
+This app is available on https://les-argonautes.herokuapp.com/
